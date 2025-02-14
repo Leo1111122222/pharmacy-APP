@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".items"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/med"
+            android:src="@drawable/baseline_approval_24"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="Name">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="15dp"
+                    android:text="2345"
+
+                    android:textStyle="normal">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+
+                android:textStyle="bold"
+                android:text="HOho">
+
+            </TextView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/roof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+
+                    android:textStyle="bold"
+                    android:text="Roof">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/roof_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="15dp"
+                    android:text="2"
+
+                    android:textStyle="normal">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cabin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:textStyle="bold"
+                    android:text="Caibn">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/cabin_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="15dp"
+                    android:text="1"
+                    android:textStyle="normal">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
